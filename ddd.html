@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+</head>
+<body>
+
+<center>
+  <img src="walkichi1.png"style="margin-top: 17%; height: 100px; width: 150px" id="2">
+<button id="1" onclick="click1()">start</button>
+    <audio src="Эпичная%20музыка%20-%20Vindicator%20(promusic.me).mp3"id="3"></audio>
+</center>
+
+</body>
+<script>
+  let pic=0
+  let interval
+    function click1() {
+      console.log(interval)
+      if (interval==undefined){
+          interval=setInterval(tik1,50)
+          document.getElementById("3").play()
+      }
+    }
+     function tik1() {
+         pic++
+         if(pic==1){
+            document.getElementById("2").src="walkichi1.png"
+         }
+         else if(pic==2){
+            document.getElementById("2").src="walkichi2.png"
+         }
+         else if(pic==3){
+            document.getElementById("2").src="walkichi3.png"
+         }
+         else if(pic==4){
+            document.getElementById("2").src="walkichi4.png"
+         }
+         else if(pic==5){
+            document.getElementById("2").src="walkichi5.png"
+         }
+         else if(pic==6){
+            document.getElementById("2").src="walkichi6.png"
+         }
+         else if(pic==7){
+            document.getElementById("2").src="walkichi7.png"
+         }
+         else if(pic==8){
+            document.getElementById("2").src="walkichi8.png"
+         }
+         else if(pic==9){
+            document.getElementById("2").src="walkichi9.png"
+            pic=0
+         }
+
+     }
+</script>
+</html>
